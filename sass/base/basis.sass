@@ -1,0 +1,180 @@
+@import "../abstracts/_abstracts"
+
+*
+    padding: 0
+    margin: 0
+
+html
+    font-size: 62.5%
+    overflow-x: hidden
+
+a:link, a:visited, a:hover, a:active
+    text-decoration: none
+    color: $white
+
+h1
+    font-weight: 200
+
+ul
+    display: flex
+    flex-direction: row
+    list-style: none
+    margin-bottom: 0
+    li
+        color: $white
+input
+    outline: none
+//Custom Styles
+.top-bottom
+    //top to bottom
+    background: linear-gradient(0deg, rgba($white,1) 15%, rgba($green,.25) 97%)
+.bottom-top
+    //bottom to top
+    background: linear-gradient(0deg, rgba($green,.25) 0%, rgba($white,1) 97%)
+
+//Bootstrap Overide////////////////////
+a.btn, button.btn, a.btn-primary:hover, button.btn-primary:hover
+    background-color: $green
+    padding: 1rem
+    font-size: 1.5rem
+    border-radius: 2rem
+    border-color: $green
+div.jumbotron
+    background-color: lighten($gray, 57%)
+//Contact Us
+div.form-group
+    input.form-control, select.form-control
+        height: calc(2.25rem + .8rem)
+        font-size: 1.5rem
+
+
+//Theme Style/////////////////////////////
+div.basic 
+    @include sect 
+    padding: 7rem 0
+    h2
+        font-size: 6rem
+//Opportunity Table
+a.list-group-item.active
+    background-color: $green
+    border-color: $green
+a.list-group-item
+    padding: .75rem .75rem
+
+//About Header
+div.about-header
+    @include sect
+    @include display(column)
+    justify-content: center
+    align-content: center
+    div.about-header-pic
+        @include sect
+        @include display(row)
+        justify-content: center
+        img
+           width: 75vw
+           height: 75%
+    div.about-header-bio
+        padding: 4rem 2rem
+        p
+            margin: auto
+            text-align: center
+            width: 75%
+            font-size: 1.7rem
+//Banner for Style for community pages
+div.about-banner
+    div.jumbotron
+        margin-bottom: 1rem
+        div.about-header
+            @include sect
+            @include display(column)
+            justify-content: center
+            align-items: center
+            width: 100%
+            h1.display-4
+                font-size: 5rem
+                text-align: center
+                padding: 1.8rem 0
+            p.lead
+                font-size: 2.5rem
+                padding: 1rem 0
+                text-align: center
+                width: 75%
+//Main About Header
+div.about-sect1
+    @include sect
+    @include display(row)
+    padding: 5rem 1rem
+    justify-content: space-between
+
+    div.about-bio
+        flex-basis: 40%
+        @include display(column)
+        justify-content: center
+        h1
+            font-size: 3.5rem
+            font-weight: 200
+        p
+            font-size: 2rem
+            letter-spacing: 120%
+    div.sidebar
+        flex-basis: 50%
+        @include display(row)
+        justify-content: center
+        flex-wrap: wrap
+        img
+            flex-basis: 100%
+
+//Use for Maps, Counttry List and Organizations 
+div.search-box
+    @include sect
+    padding: 2rem 1rem
+    div.search-header
+        
+        h1
+            font-size: 2.5rem
+        p
+            font-size: 1.7rem
+
+//Use for Country List and Organizations
+div.search-form
+    @include display(column)
+    justify-content: center
+    align-items: flex-start
+    
+    nav
+        width: 100%
+    ul.letters
+        width: 100%
+        @include display(row)
+        flex-wrap: wrap
+        li.page-item
+            flex-basis: 3.8%
+            a.page-link
+                padding: .5rem 0
+                text-transform: uppercase
+div.search-form-results
+    min-height: 35vh
+
+select.custom-select
+    margin: 2rem 0
+
+@media screen and (max-width: 1024px)
+    
+@media screen and (max-width: 700px) 
+    div.search-form
+        ul.letters
+            li.page-item
+                flex-basis: 10%
+@media screen and (max-width: 450px)
+    
+@media screen and (max-width: 375px)
+
+///Mobile View
+@media screen and (max-width: 1024px)
+    
+@media screen and (max-width: 800px) 
+
+@media screen and (max-width: 450px)
+    
+@media screen and (max-width: 375px)

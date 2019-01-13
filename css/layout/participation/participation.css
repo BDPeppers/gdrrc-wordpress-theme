@@ -1,0 +1,32 @@
+div.sect1 {
+  padding: 6rem 0;
+}
+div.sect1 div.participation-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+}
+div.sect1 h1.participation-header {
+  font-size: 4rem;
+  font-weight: 200;
+}
+div.sect1 p.participation-text {
+  font-size: 1.7rem;
+}
+
+div.form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+}
+
+@media screen and (max-width: 800px) {
+  div.form {
+    padding: 0 1rem;
+  }
+}
+
+/*# sourceMappingURL=participation.css.map */

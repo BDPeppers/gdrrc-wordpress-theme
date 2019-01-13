@@ -1,0 +1,28 @@
+@import "../../abstracts/variables"
+@import "../../abstracts/mfe"
+
+div.sect1
+    padding: 6rem 0
+    //Styling also used for Information Submission Form
+    div.participation-box
+        @include display(column)
+        padding: 0 1rem
+        @include sect
+    h1.participation-header
+        font-size: 4rem
+        font-weight: 200
+    p.participation-text
+        font-size: 1.7rem
+
+//Form Styles
+div.form
+    @include sect
+
+@media screen and (max-width: 1024px)
+    
+@media screen and (max-width: 800px) 
+    div.form
+        padding: 0 1rem
+@media screen and (max-width: 450px)
+    
+@media screen and (max-width: 375px)

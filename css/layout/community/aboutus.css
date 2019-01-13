@@ -1,0 +1,256 @@
+@keyframes rotation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(270deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+div.about-banner div.jumbotron {
+  margin-bottom: 1rem;
+}
+div.about-banner div.jumbotron div.about-header {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+div.about-banner div.jumbotron div.about-header h1.display-4 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 1.8rem 0;
+}
+div.about-banner div.jumbotron div.about-header p.lead {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  width: 75%;
+}
+
+div.about-sect1 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: row;
+  padding: 5rem 1rem;
+  justify-content: space-between;
+}
+div.about-sect1 div.about-bio {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div.about-sect1 div.about-bio h1 {
+  font-size: 3.5rem;
+  font-weight: 200;
+}
+div.about-sect1 div.about-bio p {
+  font-size: 2rem;
+  letter-spacing: 120%;
+}
+div.about-sect1 div.sidebar {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+div.about-sect1 div.sidebar img {
+  flex-basis: 100%;
+}
+
+div.about-sect2 {
+  padding: 5rem 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+div.about-sect2 div.about-card {
+  padding: 1rem;
+}
+div.about-sect2 div.card {
+  width: 40rem;
+  min-height: 48vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 2px 1px 0px darkgrey;
+}
+div.about-sect2 div.card div.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 8vh;
+  height: auto;
+  font-size: 2.5rem;
+}
+div.about-sect2 div.card div.img-wrap {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div.about-sect2 div.card div.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+div.about-sect2 div.card div.card-body p.card-text {
+  font-size: 1.7rem;
+  margin: auto;
+  padding: 2.5rem 0;
+}
+div.about-sect2 div.card div.card-body a.btn {
+  width: 50%;
+}
+
+div.cta {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.cta h1.display-4 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+div.cta p.lead {
+  font-size: 1.7rem;
+  text-align: center;
+  width: 80%;
+}
+
+div.about-sect3 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5rem 0;
+}
+div.about-sect3 div.card {
+  box-shadow: 4px 2px 1px 0px darkgrey;
+}
+div.about-sect3 div.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+div.about-sect3 div.text-center {
+  flex-basis: 22%;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+div.about-sect3 div.text-center div.card-body h5.card-title {
+  font-size: 2.5rem;
+}
+div.about-sect3 div.text-center div.card-body p.card-text {
+  font-size: 1.7rem;
+}
+div.about-sect3 div.text-center div.card-body a.btn {
+  font-size: 2rem;
+  margin: auto;
+}
+
+div.about-sect4 {
+  padding: 5rem 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130rem;
+}
+div.about-sect4 div.contact-us h1 {
+  font-size: 3rem;
+  padding: 0 1rem;
+  font-weight: 300;
+}
+div.about-sect4 div.contact-us p {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+div.about-sect4 form {
+  padding: 0 1rem;
+}
+div.about-sect4 form div.form-group {
+  width: 80%;
+}
+div.about-sect4 form div.form-group label {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  div.about-sect1 {
+    padding: 2rem 1rem;
+  }
+  div.about-sect1 div.about-bio h1 {
+    font-size: 2.5rem;
+  }
+  div.about-sect1 div.about-bio p {
+    font-size: 1.7rem;
+  }
+  div.about-sect1 div.sidebar img {
+    width: 75%;
+    height: 75%;
+  }
+}
+@media screen and (max-width: 425px) {
+  div.about-sect1 {
+    display: flex;
+    flex-direction: column;
+  }
+  div.about-sect1 div.about-bio h1 {
+    text-align: center;
+  }
+  div.about-sect1 div.about-bio p {
+    text-align: center;
+  }
+  div.about-sect1 div.sidebar img {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  div.sect2 div.about-sect2 div.about-card div.card {
+    width: 80vw;
+  }
+
+  div.sect3 div.about-sect3 div.card {
+    padding: 1rem 0;
+    flex-basis: 45%;
+  }
+  div.sect3 div.about-sect3 div.text-center {
+    flex-basis: 88%;
+  }
+  div.sect3 div.about-sect3 div.text-center div.card-body h5.card-title {
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=aboutus.css.map */

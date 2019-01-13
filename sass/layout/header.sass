@@ -1,0 +1,236 @@
+@import "../abstracts/variables"
+@import "../abstracts/mfe"
+
+
+.siteheader
+    height: 8vh
+    background-color: rgb(0,36,106)
+    @include display(row)
+    border-bottom: solid $white .2rem
+    border-top: $white solid .1rem
+    position: relative
+    z-index: 15
+.header-wrapper
+    @include sect
+    @include display(row)
+    justify-content: space-between
+    
+    
+//Logo
+.logo
+    flex-basis: 30%
+    height: 100%
+    position: relative
+    perspective: 100rem
+    justify-content: flex-end
+    top: -1rem
+    img
+        height: 200%
+        width: 50%
+        
+// Navigation Bar
+.snbar-wrapper
+    @include display(row)
+    flex-basis: 70%
+    justify-content: flex-end
+
+.desktop-nav
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100%
+    //Navigation Links
+    ul.desktop-nav-list
+        height: 100%
+        justify-content: flex-end
+        position: relative
+        .d-nav-link:not(:last-child):hover
+            background-color: rgba($green,.3)
+        .d-nav-link
+            font-size: 2rem
+            height: 100%
+            @include display(row)
+            align-items: center
+            justify-content: center
+        .d-nav-link:not(:last-child)
+            border-right: .1rem $white solid
+            border-left: .1rem $white solid
+            display: block
+            .dropdown
+                display: none
+            .nav-btn
+                text-align: center
+                color: $white
+                width: 100%
+                display: flex
+                height: 100%
+                justify-content: center
+                align-items: center
+                padding: 0 2rem
+
+            
+        // Hover Dropdown
+        .d-nav-link:hover .nav-btn
+            position: relative
+        .d-nav-link:hover .dropdown
+            display: flex
+            // flex-basis: 100%
+            flex-direction: column
+            position: absolute
+            min-width: 30rem
+            box-shadow: 0rem .8rem 1.6rem 0rem rgba(0,0,0,0.2)
+            z-index: 1
+            background-color: rgba($green, .8)
+            // clear: both
+        
+            .dropdown-link
+                border: .1rem solid $white
+                padding: .5rem 1rem
+            .dropdown-link:hover
+                background-color: $green
+            
+
+        // Search Bar Widget Placement Styling
+        div.search-bar
+            background-color: $white
+            border-radius: 2rem
+            display: flex
+            flex-direction: row
+            align-items: center
+            margin-left: 1rem
+            
+//WordPress Search Bar Widget
+h2.search-widget-title
+    display: none
+label.screen-reader-text
+    display: none
+form.searchform
+    div
+        @include display(row)
+        input
+            border-top-left-radius: 2rem
+            border-bottom-left-radius: 2rem
+            padding: 1rem
+            border-right: .175rem solid $green
+            border-left: 0
+            border-top: 0
+            border-bottom: 0 
+        input#searchsubmit
+            border-top-left-radius: 0
+            border-bottom-left-radius: 0
+            border-top-right-radius: 2rem
+            border-bottom-right-radius: 2rem
+            background-color: $green
+            color: $white
+
+
+    
+// Mobile View
+navigation.mobile-nav
+    display: none
+    ul.mobile-dropdown-L2
+        display: none
+
+
+@media screen and (max-width: 1024px)
+
+@media screen and (max-width: 800px)
+    header.siteheader
+        height: auto
+    
+    //mobile navigation
+    div.snbar-wrapper
+        display: none
+    navigation.desktop-nav
+        display: none
+    div.logo
+        display: none
+    
+    navigation.mobile-nav
+        @include display(row)
+        width: 100%
+        flex-wrap: wrap
+        div.mobile-header
+            display: flex
+            flex-basis: 100%
+            min-height: 6vh
+            padding: .5rem 1rem
+            justify-content: center
+            align-items: center
+            h1
+                color: $white
+                text-align: center
+                font-size: 2rem
+        ul.mobile-nav-list
+            @include display(column)
+            width: 100%
+        .m-nav-link
+            border-top: white solid .075rem
+            font-size: 1.7rem
+            display: block
+            a
+                font-size: 3.5rem
+            a.menu-btn
+                padding-left: .5rem
+                height: 100%
+                display: flex
+                align-items: center
+                i.fas
+                    padding-right: .5rem
+        ul.mobile-dropdown
+            display: none
+        div.search-bar
+            display: flex
+            background-color: $white
+            border-radius: 2rem
+            align-items: center
+            padding-left: .5rem
+            margin: .5rem 0
+            width: 80%
+            form.searchform
+                width: 100%
+                div
+                    width: 100%
+                    input#s
+                        flex-basis: 80%
+                    input#searchsubmit
+                        flex-basis: 20%
+    //Dropdown
+    .mobile-dropdown
+        @include display(column)
+        li.L1
+            border-top: white solid .1rem
+            border-bottom: white solid .1rem
+            font-size: 2.5rem
+            background-color: rgba($green, .2)
+            display: block
+            width: 100%
+            a.L1-link
+                font-size: 2.5rem
+                display: block
+                width: 100%
+                padding-left: 3rem
+        li.L1:hover
+            background-color: rgba($green, .4)
+        .mobile-dropdown-L2
+            @include display(column)
+            li.menu-item
+                border-top: white solid .1rem
+                font-size: 2rem
+                background-color: rgba($green,.7)
+                background-color: $green
+                a
+                    font-size: 2rem
+                    padding-left: 6rem
+            li.menu-item:hover
+                background-color: rgba($green,.7)
+    div.carousel-caption
+        h1.caption-box
+            font-size: 2rem
+ 
+@media screen and (max-width: 425px)
+    
+
+@media screen and (max-width: 375px)
+
+    
