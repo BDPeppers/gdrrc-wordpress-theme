@@ -8,6 +8,7 @@
             </div>
         </div>
     </div>
+    
 <!-- About Section One ~ Bio -->
 <div class="top-bottom sect1">
     <div class="about-header">

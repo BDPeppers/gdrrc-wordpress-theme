@@ -214,6 +214,8 @@ div.search-form ul.letters li.page-item {
   flex-basis: 3.8%;
 }
 div.search-form ul.letters li.page-item a.page-link {
+  text-align: center;
+  color: #42a2aa;
   padding: 0.5rem 0;
   text-transform: uppercase;
 }
